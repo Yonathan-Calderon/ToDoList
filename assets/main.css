@@ -89,7 +89,6 @@ h4 {
 
 .create-todo .options {
 	display: grid;
-	grid-template-columns: repeat(2, 1fr);
 	grid-gap: 1rem;
 	margin-bottom: 1.5rem;
 }
@@ -181,6 +180,7 @@ input:checked ~ .bubble::after {
 
 .todo-list .todo-item {
 	display: flex;
+	justify-content: center;
 	align-items: center;
 	background-color: #FFF;
 	padding: 1rem;
@@ -207,6 +207,8 @@ input:checked ~ .bubble::after {
 .todo-item .actions {
 	display: flex;
 	align-items: center;
+	position: relative;
+	right: 50px;
 }
 
 .todo-item .actions button {
@@ -234,4 +236,22 @@ input:checked ~ .bubble::after {
 .todo-item.done .todo-content input {
 	text-decoration: line-through;
 	color: var(--grey);
+}
+@media (min-width: 470px) {
+	body{
+		background-color: aqua;
+	}
+	
+	.create-todo .options {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 1rem;
+		margin-bottom: 1.5rem;
+	}
+	.todo-item .actions {
+		display: flex;
+		align-items: center;
+	}
+	
+	
 }

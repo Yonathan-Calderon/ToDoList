@@ -71,6 +71,7 @@ function DisplayTodos () {
 		label.appendChild(span);
 		actions.appendChild(edit);
 		actions.appendChild(deleteButton);
+		content.appendChild(actions);
 		todoItem.appendChild(label);
 		todoItem.appendChild(content);
 		todoItem.appendChild(actions);
